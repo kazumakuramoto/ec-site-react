@@ -41,5 +41,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      
+    <!-- Start KARTE Tag -->
+    <script>!function(n){if(!window[n]){var o=window[n]=function(){var n=[].slice.call(arguments);return o.x?o.x.apply(0,n):o.q.push(n)};o.q=[],o.i=Date.now(),o.allow=function(){o.o="allow"},o.deny=function(){o.o="deny"}}}("krt")</script>
+    <!-- Start KARTE Compatible Tag -->
+    <script>!function(t,e,n){var r=this&&this.__spreadArray||function(t,e,n){if(n||2===arguments.length)for(var r,o=0,a=e.length;o<a;o++)!r&&o in e||(r||(r=Array.prototype.slice.call(e,0,o)),r[o]=e[o]);return t.concat(r||Array.prototype.slice.call(e))};n[e]&&(n[e].stop(),console.warn("[krt:compat] detect old tracker and remove it"),delete n[e]);var o=n[e]||(n[e]=[]),a=function(){for(var e=[],r=0;r<arguments.length;r++)e[r]=arguments[r];return n[t].apply(n,e)};["start","stop","action","event","goal","chat","admin","group","alias","ready","form","click","submit","cmd","emit","on","send","css","js","style","option","get","set","collection"].map((function(t){o[t]=function(){for(var e=[],n=0;n<arguments.length;n++)e[n]=arguments[n];return console.error.apply(console,r(["[krt:compat] not implmeneted",t],e,!1))}})),o.track=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];if(0!==t.length)return t[1]||(t[1]={}),t[1]._system||(t[1]._system={}),t[1]._system.compatible_tag=!0,a.apply(void 0,r(["send"],t,!1))},o.user=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];return t[0]||(t[0]={}),t[0]._system||(t[0]._system={}),t[0]._system.compatible_tag=!0,a.apply(void 0,r(["send","identify"],t,!1))},["buy","view","page"].map((function(t){return o[t]=function(){for(var e=[],n=0;n<arguments.length;n++)e[n]=arguments[n];return e[0]||(e[0]={}),e[0]._system||(e[0]._system={}),e[0]._system.compatible_tag=!0,a.apply(void 0,r(["send",t],e,!1))}})),o.link=function(e,r){var o=document.querySelector(e);o&&(r||(r={}),r._system||(r._system={}),r._system.compatible_tag=!0,r.href=o.getAttribute("href"),r.event_name||(r.event_name="link"),o.addEventListener("click",(function(){return n[t]("send",r.event_name,r)}),!0))},o.api_key="d9799c073a54cb05293d11d01a679477"}("krt","tracker",window)</script>
+    <!-- End KARTE Compatible Tag -->
+    <script async src="https://cdn-edge.karte.io/d9799c073a54cb05293d11d01a679477/edge.js"></script>
+    <!-- End KARTE Tag -->
   </body>
 </html>
